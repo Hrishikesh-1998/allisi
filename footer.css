@@ -1,11 +1,105 @@
-.container-fluid{
+/* Global Footer */
+
+.footer-section{
     background-color: #084C2E;
-    color: white;
+    color: #FFFFFF;
 }
-.SignUp{
-    background-color: #39A657;
+
+
+/* Row 1 0f 1 CSS */
+
+.legal-links{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.legal-links-items{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 13px;
 }
 
 .nav-link{
-    font-size: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+
+
+/* Row 2 of 1 CSS */
+
+.form-control{
+  border-radius: 10px;
+  border: 1px;
+  height: 48px;
+  padding: 12px 16px;
+
+}
+
+.SignUp{
+  background-color: #39A657;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 17.5px;
+  line-height: 24px;
+  
+}
+
+.store{
+  height:51.05px;
+  width:172.3px;
+}
+
+
+/* Copyright section CSS */
+
+.policy{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.policy-list{
+padding-left:2rem;
+}  
+
+/* MEDIA QUERY */
+
+
+@media screen and (min-width: 1280px) {
+
+  .legal-links{
+    white-space: nowrap;
+  }
+
+  .search{
+    max-width: 494px;
+    height: 86px;
+  }
+
+  .SignUp{
+    padding: 12px 24px;
+  }
+
+  .store{
+    width:152px;
+    height:45px;
+  }
+
+  .policy{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.policy-list{
+  padding-left:4rem;
+} 
 }
