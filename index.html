@@ -4,14 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allisi</title>
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="pocket.css">
     <link rel="stylesheet" href="key-features.css">
     <link rel="stylesheet" href="who-we-are.css">
     <link rel="stylesheet" href="why-choose-us.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="footer2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+    <header class="allish-header" id="allish-header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg allish-nav">
+            <a class="navbar-brand" href="#">
+              <img src="./images/Logo-desktop.png" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-bars mob-menu"></i>
+            </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 header-links">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#key-features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQs</a>
+                </li>
+              </ul>
+              <div class="login">
+                <button type="button" class="btn login-signup-btn" id="close-button1">Log In/Sign Up</button>
+              </div>
+              <button type="button" class="close-mob-nav" id="close-mob-nav">
+                <i class="fa-solid fa-xmark close-btn"></i>
+              </button>
+            </div>
+            <!-- <div class="login-signup">
+              <button type="button" class="btn login-signup-btn">Log In/Sign Up</button>
+            </div> -->
+          </nav>
+        </div>
+      </header>
     <!-- Hero Section -->
      <section class="header">
         <div class="hero-body">
@@ -68,7 +119,7 @@
         </div>
     </section>
     <!--Our Key Features  -->
-    <section class="key-features">
+    <section class="key-features" id="key-features">
         <div class="container">
             <div class="feature-title text-center">Our Key Features</div>
             <div class="row">
@@ -162,7 +213,7 @@
     <!-- Our Key Features -->
 
     <!-- Who we are -->
-     <section class="who-we-are">
+     <section class="who-we-are" id="about-us">
         <div class="container">
             <div class="col-md-7 offset-md-5">
                 <div class="wwa-heading">Who We Are?</div>
@@ -180,6 +231,156 @@
             </div>
         </div>
      </section>
+
+     <!-- FAQ -->
+      <section class="faq" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="faq-title">Frequently Asked Questions</div>
+                    <div class="faq-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</div>
+                </div>
+                <div class="col-md-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <div class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do I place an order on Allish?
+                            </button>
+                          </div>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Yes, currently we are available app only (Android and iOS) and soon we will be available to shop via website.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Do I need to download the app to shop on Allish? 
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!--Row 1 of 1-->
+                <div class="col-12 col-md-5">
+                  <div class="row">
+                    <!--Row 1 of 2-->
+                    <div class="col-6 col-md-4 ">
+                      <div class="footer-titles">Privacy Policy</div>
+                      <div class="footer-all-links">
+                        <a href="#" class="footer-links">My Account</a>
+                        <a href="#" class="footer-links">My Orders</a>
+                        <a href="#" class="footer-links">My Favourites</a>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <div class="footer-titles">Return Policy</div>
+                        <div class="footer-all-links">
+                          <a href="#" class="footer-links">Help Center</a>
+                          <a href="#" class="footer-links">Give Feedback</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <div class="footer-titles text-nowrap mt-20">Terms & Conditions</div>
+                        <div class="footer-all-links">
+                          <a href="#" class="footer-links">About Us</a>
+                          <a href="#" class="footer-links">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="social d-flex">
+                            <div class="social-title">Follow Us</div>
+                            <a href="" class="social-media">
+                                <i class="fa-brands fa-square-instagram social-icon social-insta"></i>
+                            </a>
+                            <a href="" class="social-media">
+                                <i class="fab fa-facebook social-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Row 2 of 1-->
+                <div class="col-md-5 ms-auto">
+                  <div class="newsletter ms-auto">
+                    <div class="newsletter-title">Subscribe to our Newsletter</div>
+                    <form class="newsletter-form">
+                        <div class="row">
+                            <div class="col-8 col-md-9">
+                                <input type="text" class="newsletter-input" placeholder="Enter Email address"/>
+                            </div>
+                            <div class="col-4 col-md-3 ps-0">
+                                <button class="signup-btn btn" type="button"> Sign Up </button>
+                            </div>
+                        </div>
+                    </form>
+    
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                        <a href="" target="_blank">
+                            <img src="images/app-store.png" alt="App store" class="img-fluid store"/>
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="images/google-play.png" alt="Google store" class="img-fluid store"/>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!--  -->
+              <hr class="divider">
+              <div class="row">
+                <div class="col-md-7">
+                    <div class="rights-reserved text-center text-md-start">All rights reserved 2024</div>
+                </div>
+                <div class="col-12 col-md-5 d-flex justify-content-between">
+                    <div class="rights-item text-center">Terms & Conditions</div>
+                    <div class="rights-item">Privacy Policy</div>
+                    <div class="rights-item">Return Policy</div>
+                </div>
+              </div>
+        </div>
+      </footer>
+
+      <script>
+        document.getElementById('close-mob-nav').addEventListener('click', function() {
+            document.getElementById('navbarSupportedContent').classList.toggle('show');
+        });
+
+        const header = document.getElementById('allish-header');
+        window.onscroll = function() {
+            if (window.scrollY > 70){
+                header.classList.add("test");
+            } else if (window.scrollY < 10){
+                header.classList.remove("test");
+            }
+        }
+      </script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

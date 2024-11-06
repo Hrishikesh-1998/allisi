@@ -1,0 +1,76 @@
+.faq {
+    padding: 40px 0;
+}
+
+.faq-title {
+    font-size: 30px;
+    font-weight: 700    ;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.faq-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.faq .accordion-item {
+    background-color: #F9FAFB;
+}
+
+.faq .accordion-item:has(.accordion-button.collapsed) {
+    background-color: #fff;
+}
+
+.faq .accordion-button,
+.faq .accordion-button:focus {
+    color: #1D2939;
+    border: none;
+    background-color: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    padding: 0;
+}
+
+.faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    color: #1D2939;
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.accordion-item:last-of-type,
+.accordion-item:first-of-type {
+    border-radius: 0;
+}
+
+.faq .accordion-item {
+    border: none;
+    border-bottom: 1px solid #EAECF0;
+    padding: 24px 20px;
+} 
+
+.faq .accordion-body {
+    padding: 16px 0 0;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding: 100px 0;
+    }
+ 
+    .faq-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .faq-subtitle {
+        margin-bottom: 0;
+    }
+
+}
