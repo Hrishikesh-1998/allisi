@@ -7,6 +7,7 @@
 
 .wcu-heading {
     font-size: 30px;
+    font-weight: 700;
     line-height: 38px;
     margin-bottom: 16px;
 }
@@ -23,11 +24,13 @@
 
     .wcu-heading {
         font-size: 48px;
+        line-height: 60px;
         margin-bottom: 24px;
     }
 
     .wcu-content {
         font-size: 18px;
+        line-height: 28px;
     }
 
 }
