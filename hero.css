@@ -1,6 +1,7 @@
 .hero-body {
     background-color: #084C2E;
 }
+
 .hero-section {
     background-image: url(./images/hero-section.png);
     background-size: cover;
@@ -27,7 +28,7 @@
 .hero-button > .shopping-btn {
     background-color: #fff;
     border-radius: 12px;
-    color: #000;
+    color: #1D2939;
     font-size: 16px;
     font-weight: 600;
     width: 180px;
@@ -35,9 +36,10 @@
     padding: 10px 24px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
     .hero-section {
         text-align: left;
+        min-height: 880px;
     }
 
     .hero-title {

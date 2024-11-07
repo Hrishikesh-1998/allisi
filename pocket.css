@@ -9,6 +9,7 @@
 
 .pocket-title {
     font-size: 30px;
+    font-weight: 700;
     line-height: 38px;
     margin-bottom: 16px;
 }
@@ -31,9 +32,10 @@
     margin-top: 40px;
 }
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 768px) {
     .pocket-details {
-        padding: 164px 0;
+        padding: 165px 0;
     }
     
     .pocket-title {

@@ -15,6 +15,10 @@
     z-index: 500;
   }
   
+  .allish-header .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  
   .allish-nav {
     padding: 20px 0;
   }
@@ -41,7 +45,7 @@
   .login .login-signup-btn:focus {
       background-color: #fff;
       border-radius: 12px;
-      color: #000;
+      color: #1D2939;
       font-size: 16px;
       font-weight: 600;
       width: 161px;
@@ -61,7 +65,7 @@
   
   
   @media screen and (max-width: 768px) {
-    .sidebar, .navbar-collapse {
+    .navbar-collapse {
       position: fixed;
       right: -250px; /* Initially hidden off-screen */
       top: 0;
@@ -73,11 +77,6 @@
       z-index: 1050; /* Ensure it overlays other content */
   }
   
-  .sidebar .nav-link {
-      color: white;
-  }
-  
-  .sidebar.open,
   .navbar-collapse.show {
       right: 0; /* Slide in */
       display: flex;

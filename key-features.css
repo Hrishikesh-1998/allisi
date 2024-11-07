@@ -4,7 +4,9 @@
 
 .feature-title {
     font-size: 30px;
+    font-weight: 700;
     margin-bottom: 40px;
+    line-height: 38px;
 }
 
 .feature-card {
@@ -23,6 +25,7 @@
 
 .feature-heading {
     font-size: 30px;
+    font-weight: 600;
     line-height: 38px;
     margin-bottom: 8px;
 }
@@ -42,7 +45,7 @@
 .mw-250{
     max-width: 250px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
     .key-features{
         margin: 100px 0;
     }
@@ -50,6 +53,7 @@
     .feature-title{
         font-size: 48px;
         margin-bottom: 60px;
+        line-height: 60px;
     }
 
     .feature-card {

@@ -19,6 +19,10 @@
     />
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         html {
             scroll-behavior: smooth;
         }
@@ -27,7 +31,7 @@
 <body>
     <header class="allish-header" id="allish-header">
         <div class="container">
-          <nav class="navbar navbar-expand-lg allish-nav">
+          <nav class="navbar navbar-expand-md allish-nav">
             <a class="navbar-brand" href="#">
               <img src="./images/Logo-desktop.png" class="img-fluid" alt="">
             </a>
@@ -35,7 +39,7 @@
               <span class="navbar-toggler-icon"></span>
               <i class="fas fa-bars mob-menu"></i>
             </button>
-            <div class="navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse custom-nav" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0 header-links">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -57,14 +61,11 @@
                 <i class="fa-solid fa-xmark close-btn"></i>
               </button>
             </div>
-            <!-- <div class="login-signup">
-              <button type="button" class="btn login-signup-btn">Log In/Sign Up</button>
-            </div> -->
           </nav>
         </div>
-      </header>
+    </header>
     <!-- Hero Section -->
-     <section class="header">
+     <section class="hero">
         <div class="hero-body">
             <div class="hero-section">
                 <div class="container">
@@ -104,7 +105,7 @@
                                     <img src="./images/app-store.png" class="img-fluid" alt="Apple app store" srcset="">
                                 </div>
                                 <div class="col-6">
-                                    <img src="./images/google-play.png" class="img-fluid" alt="Google Play Store" srcset="">
+                                    <img src="./images/google-play.png" class="img-fluid google-img" alt="Google Play Store" srcset="">
                                 </div>
                             </div>
                         </div>
@@ -290,7 +291,7 @@
                 <div class="col-12 col-md-5">
                   <div class="row">
                     <!--Row 1 of 2-->
-                    <div class="col-6 col-md-4 ">
+                    <div class="col-5 col-md-4 ">
                       <div class="footer-titles">Privacy Policy</div>
                       <div class="footer-all-links">
                         <a href="#" class="footer-links">My Account</a>
@@ -298,7 +299,7 @@
                         <a href="#" class="footer-links">My Favourites</a>
                       </div>
                     </div>
-                    <div class="col-6 col-md-4 ">
+                    <div class="col-5 col-md-4 ">
                         <div class="footer-titles">Return Policy</div>
                         <div class="footer-all-links">
                           <a href="#" class="footer-links">Help Center</a>
@@ -371,6 +372,15 @@
         document.getElementById('close-mob-nav').addEventListener('click', function() {
             document.getElementById('navbarSupportedContent').classList.toggle('show');
         });
+
+        const headerLinks = document.querySelectorAll('.custom-nav .nav-link');
+
+        headerLinks.forEach(element => {
+            element.addEventListener('click', function() {
+                document.getElementById('navbarSupportedContent').classList.toggle('show');
+            });
+        });
+
 
         const header = document.getElementById('allish-header');
         window.onscroll = function() {
