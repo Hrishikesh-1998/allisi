@@ -40,7 +40,9 @@
 .head-con {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 6;
+    padding: 0 12px;
 }
 
 .hero-title {
@@ -73,6 +75,11 @@
     .hero-section {
         text-align: left;
         min-height: 880px;
+    }
+
+    .head-con {
+        padding: 0;
+        left: unset;
     }
 
     .hero-title {
