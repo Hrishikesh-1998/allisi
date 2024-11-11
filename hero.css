@@ -1,13 +1,46 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+.hero-section .hero-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    object-fit: cover;
+    font-family: 'object-fit: cover';
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .hero-body {
     background-color: #084C2E;
 }
 
 .hero-section {
-    background-image: url(./images/hero-section.png);
+    /* background-image: url(./images/hero-section.png);
     background-size: cover;
+    min-height: 800px; */
+    /* text-align: center; */
     color: #fff;
-    min-height: 800px;
+
+    /* new css */
     text-align: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-body {
+    height: 100%;
+}
+
+.head-con {
+    position: absolute;
+    top: 0;
+    z-index: 6;
 }
 
 .hero-title {
