@@ -44,6 +44,13 @@
     margin: 0 14px 0 18px;
   }
   
+  .rights-link,
+  .rights-link:hover,
+  .rights-link:focus-visible {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+  }
   .newsletter-title {
     margin: 24px 0 14px;
   }
@@ -98,10 +105,10 @@
     outline: none;
   }
 
-  .store{
+  /* .store{
     height:51.05px;
     width:172.3px;
-  }
+  } */
   
   @media screen and  (min-width: 768px) {
     .footer {

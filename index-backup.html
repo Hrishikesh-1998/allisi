@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
     <style>
         *{
             margin: 0;
@@ -73,34 +73,25 @@
         </div>
     </header>
     <!-- Hero Section -->
-     <!-- Hero Section -->
      <section class="hero">
         <div class="hero-body">
             <div class="hero-section">
-              <!--  -->
-              <video loop muted autoplay preload="auto" class="hero-video">
-                    <source src="./images/allish_4.webm" type="video/mp4">
-                    Your browser does not support the video tag.  
-              </video>
-              <!--  -->
                 <div class="container">
-                  <div class="row">
-                    <div class="col-md-10">
-                      <div class="head-con">
-                        <div class="hero-title">
-                          Your Neighbourhood, Your Shopping Universe.
-                      </div>
-                      <div class="hero-subtitle">
-                          Explore a world of groceries with Allish. Whether it's specialty items or your everyday essentials, Allish connects you with local stores across the UK for a seamless shopping experience.
-                      </div>
-                      <div class="hero-button">
-                        <a href="#pocket">
-                            <button type="button" class="btn shopping-btn">Start Shopping</button>
-                        </a>
-                      </div>
-                      </div>                        
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="hero-title">
+                                Your Neighbourhood, Your Shopping Universe.
+                            </div>
+                            <div class="hero-subtitle">
+                                Explore a world of ethnic groceries with Allish. Whether it's specialty items or your everyday essentials, Allish connects you with local ethnic stores across the UK for a seamless shopping experience.
+                            </div>
+                            <div class="hero-button">
+                                <a href="#pocket">
+                                    <button type="button" class="btn shopping-btn">Start Shopping</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -137,14 +128,11 @@
                     <div class="pocket-image">
                         <!-- <img src="./images/mobile.png" class="img-fluid" alt="Allish Mobile app image" loading="lazy"> -->
                         <div class="video-tag">
-                            <!-- <video autoplay muted class="phone-video">
+                            <video autoplay muted class="phone-video">
                                 <source src="./images/Phones.mp4" type="video/mp4">
                                 <source src="movie.ogg" type="video/ogg">
                                 Your browser does not support the video tag.
-                              </video> -->
-
-                              <!-- lottie -->
-                            <div id="lottie-container" class="img-fluid"></div>
+                              </video>
                          </div>
                     </div>
                 </div>
@@ -416,7 +404,7 @@
                                 <img src="./images/app-store.svg" class="img-fluid" alt="Apple app store" loading="lazy">
                             </a>
                         </div>
-                        <div class="col-6 col-md-5  col-lg-4 ps-0">
+                        <div class="col-6 col-md-5  col-lg-4 ps-md-0">
                             <a href="https://play.google.com/store/apps/details?id=allish.co.uk.prod" target="_blank">
                                 <img src="./images/play-store.svg" class="img-fluid google-img" alt="Google Play Store" loading="lazy">
                             </a>
@@ -444,30 +432,17 @@
                     <div class="rights-reserved text-center text-md-start">All rights reserved 2024</div>
                 </div>
                 <div class="col-12 col-md-5 d-flex justify-content-between">
-                    <a href="./term-condition.html" class="rights-link">
+                    <a href="./term-condition.html">
                         <div class="rights-item text-center">Terms & Conditions</div>
                     </a>
-                    <a href="./term-condition.html" class="rights-link">
-                        <div class="rights-item">Privacy Policy</div>
-                    </a>
-                    <a href="./term-condition.html" class="rights-link">
-                        <div class="rights-item">Return Policy</div>
-                    </a>
+                    <div class="rights-item">Privacy Policy</div>
+                    <div class="rights-item">Return Policy</div>
                 </div>
               </div>
         </div>
       </footer>
 
       <script>
-
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('lottie-container'), // DOM element to contain animation
-            renderer: 'svg',                                      // Render format: svg, canvas, html
-            loop: false,                                           // Set to true if you want the animation to loop
-            autoplay: true,                                       // Start animation automatically
-            path: 'images/Phones-lotti.json'            // Path to your Lottie JSON file
-        });
-
         document.getElementById('close-mob-nav').addEventListener('click', function() {
             document.getElementById('navbarSupportedContent').classList.toggle('show');
         });

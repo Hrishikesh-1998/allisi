@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottie Animation Example</title>
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/bodymovin.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+</head>
+<body>
+  <!-- <div id="lottie-container" style="width: 400px; height: 400px;"></div> -->
+
+  <!-- <lottie-player src="./images/Phones-lotti.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player> -->
+  <div id="lottie-container" style="width: 400px; height: 400px;"></div>
+
+  <script>
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById('lottie-container'), // DOM element to contain animation
+    renderer: 'svg',                                      // Render format: svg, canvas, html
+    loop: false,                                           // Set to true if you want the animation to loop
+    autoplay: true,                                       // Start animation automatically
+    path: 'images/Phones-lotti.json'            // Path to your Lottie JSON file
+  });
+  </script>
+
+</body>
+</html>
