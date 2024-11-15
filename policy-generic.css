@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+
 .terms-policy {
     color: #1D2939;
     padding: 92px 0 0;
@@ -17,6 +21,27 @@
     margin-bottom: 42px;
 }
 
+.term-text,
+.main-subheading,
+.terms-list {
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.terms-heading,
+.term-service {
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.term-service {
+    font-weight: 500;
+}
+
 .terms-details,
 .mb-24 {
     margin-bottom: 24px;
@@ -26,25 +51,14 @@
     margin-bottom: 8px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
 
-.term-text,
-.main-subheading,
-.terms-list {
-    color: inherit;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.terms-heading {
-    color: inherit;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    margin-bottom: 16px;
-}
 
 @media screen and (min-width: 768px) {
     .main-heading {
@@ -62,7 +76,8 @@
         line-height: 28px;
     }
 
-    .terms-heading {
+    .terms-heading,
+    .term-service {
         font-size: 24px;
         line-height: 32px;
     }    

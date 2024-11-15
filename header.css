@@ -10,7 +10,8 @@
     z-index: 10;
   }
 
-  .allish-header.test {
+  .allish-header.header-bg-green,
+  .allish-header:has(+ .terms-policy) {
     background-color: #054F31;
     border-bottom: 1px solid #3CCB7F;
     z-index: 500;
