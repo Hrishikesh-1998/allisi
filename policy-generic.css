@@ -1,9 +1,15 @@
-body {
-    font-family: "Roboto", sans-serif !important;
+@font-face {
+    font-family: Inter;
+    src: url(./Inter/static/Inter_18pt-Regular.ttf);
 }
+
+/* body {
+    font-family: "Inter", sans-serif !important;
+ } */
 
 .terms-policy {
     color: #1D2939;
+    font-family: "Inter", sans-serif !important;
     padding: 92px 0 0;
     background-color: #084C2E;
 }

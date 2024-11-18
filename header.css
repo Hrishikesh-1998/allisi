@@ -5,6 +5,7 @@
 .allish-header {
     color: #fff;
     background: transparent;
+    font-family: "Inter", sans-serif !important;
     padding: 12px 0;
     position: fixed;
     top: 0;

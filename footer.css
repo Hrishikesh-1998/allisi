@@ -1,6 +1,7 @@
 /* Global Footer */
 
 .footer-section{
+    font-family: "Inter", sans-serif !important;
     background-color: #084C2E;
     color: #FFFFFF;
 }
