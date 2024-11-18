@@ -63,18 +63,19 @@
 }
 
 .faq .accordion-button::after {
-    font-size: 32px;
-    background: none;
-    content: "+";
-    height: unset;
+    /* background: none; */
+    content: "";
+    background: url("./images/open-faq.svg") no-repeat;
+    width: 24px;
+    height: 24px;
 }
 
 .faq .accordion-button:not(.collapsed)::after {
     background: none;
-    content: "-";
-    font-size: 32px;
+    background: url("./images/close-faq.svg") no-repeat;
+    content: "";
     transform: none;
-    height: unset;
+    /* height: unset; */
 }
 
 @media (min-width: 768px) {
