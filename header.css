@@ -4,10 +4,9 @@
 
 .wave-svg {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   width: 100%;
   height: auto;
-  margin-bottom: -100px;
   z-index: 11;
   left: 0;
 }
@@ -145,7 +144,8 @@
 
 
 @media screen and (min-width: 768px) {
-.wave-svg {
-  margin-bottom: -150px;
-}
+  .wave-svg {
+    bottom: 0;
+    margin-bottom: -150px;
+  }
 }
